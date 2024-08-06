@@ -11,6 +11,9 @@ export const createServer = (): Express => {
     .use(urlencoded({ extended: true }))
     .use(json())
     .use(cors())
+    .get("/", (req, res) => {
+      res.send("Hello from Turbo Example API.")
+    })
     .get("/message/:name", (req, res) => {
       return res.json({ message: `hello ${req.params.name}` });
     })
