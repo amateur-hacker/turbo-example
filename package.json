@@ -10,7 +10,7 @@
     "lint": "turbo run lint",
     "test": "turbo run test"
   },
-  "dependencies": {},
+  "dependencies": { "vercel": "^35.2.3" },
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.0.11"

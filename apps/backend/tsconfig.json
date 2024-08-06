@@ -2,9 +2,9 @@
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
     "lib": ["ES2015"],
-    "outDir": "../backend/distkend/dist",
-    "rootDir": "../backend/srcckend/src"
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "exclude": ["../backend/node_modulesode_modules"],
-  "include": ["../backend/srcbackend/src"]
+  "exclude": ["node_modules"],
+  "include": ["src"]
 }
