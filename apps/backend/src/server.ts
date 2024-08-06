@@ -12,7 +12,7 @@ export const createServer = (): Express => {
     .use(json())
     .use(cors())
     .get("/", (req, res) => {
-      res.send("Hello from Turbo Example API.")
+      res.send("Hello from Turbo Repo Example API.")
     })
     .get("/message/:name", (req, res) => {
       return res.json({ message: `hello ${req.params.name}` });
